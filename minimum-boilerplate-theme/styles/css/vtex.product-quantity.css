@@ -1,0 +1,25 @@
+.quantitySelectorTitle, :global(.vtex-product-identifier-0-x-product-identifier), :global(.vtex-input__label) {
+    color: #fff;
+}
+
+:global(.vtex-numeric-stepper-container) {
+    border: 1px solid #424242;
+    max-width: max-content;
+    border-radius: 3px;
+}
+
+:global(.vtex-numeric-stepper__input), :global(.vtex-numeric-stepper__minus-button), :global(.vtex-numeric-stepper__plus-button) {
+    border-color: transparent;
+    color: #59ff00;
+    background: #393939;
+}
+
+:global(.vtex-numeric-stepper__minus-button), :global(.vtex-numeric-stepper__plus-button) {
+    background: #212121;
+    transition: linear .2s;
+}
+
+:global(.vtex-numeric-stepper__minus-button):hover, :global(.vtex-numeric-stepper__plus-button):hover {
+    background: #59ff00;
+    color: #212121;
+}

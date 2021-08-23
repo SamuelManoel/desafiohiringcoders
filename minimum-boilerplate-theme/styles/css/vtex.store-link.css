@@ -1,0 +1,11 @@
+.link--more-details {
+    background: #59ff00;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #3C3C3C;
+    text-transform: uppercase;
+    border-radius: 5px;
+}

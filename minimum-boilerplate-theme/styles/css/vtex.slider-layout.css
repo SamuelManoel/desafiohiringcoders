@@ -1,0 +1,37 @@
+.sliderTrackContainer--slide-principal {
+    border-radius: 15px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+.paginationDotsContainer--slide-principal {
+    bottom: 15px;
+}
+
+.sliderArrows--slide-principal {
+    bottom: 0;
+    padding: 5px 10px 5px 10px;
+    z-index: 99;
+    border-radius: 3px;
+    background: #fff;
+    margin: 0;
+    transition: ease-in-out .2s;
+}
+
+.sliderRightArrow--slide-principal {
+    right: 50px;
+}
+
+.sliderLeftArrow--slide-principal {
+    left: 50px;
+}
+
+.caretIcon--slide-principal {
+    width: 15px;
+    color: #fff;
+}
+
+.sliderArrows--slide-principal:hover {
+    background: #424242 !important;
+    color: #fff;
+}

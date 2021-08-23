@@ -1,0 +1,182 @@
+{
+  "store.home": {
+    "blocks": [
+      "countdown",
+      "tab-layout#home"
+    ]
+  },
+  "flex-layout.row#list": {
+    "props": {
+      "blockClass": "flex-price"
+    },
+    "children": [
+      "flex-layout.col#list"
+    ]
+  },
+  "flex-layout.col#list": {
+    "props": {
+      "blockClass": "flex-price"
+    }
+  },
+  "flex-layout.row#price": {
+    "props": {
+      "blockClass": "flex-price"
+    },
+    "children": [
+      "flex-layout.col#price"
+    ]
+  },
+  "flex-layout.row#readMore": {
+    "props": {
+      "blockClass": "flex-read-more"
+    },
+    "children": [
+      "flex-layout.col#readMore"
+    ]
+  },
+  "flex-layout.col#price": {
+    "props": {
+      "blockClass": "flex-price-col"
+    },
+    "children": [
+      "product-summary-price"
+    ]
+  },
+  "flex-layout.col#readMore": {
+    "props": {
+      "blockClass": "flex-read-more"
+    },
+    "children": [
+      "link.product#product-page"
+    ]
+  },
+  "link.product#product-page": {
+    "props": {
+      "href": "/{slug}/p",
+      "label": "Ver Detalhes",
+      "blockClass": "more-details"
+    }
+  },
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "flex-layout.row#container",
+      "tab-content#home"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "palmeiras"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#palmeiras",
+      "tab-list.item#corinthians"
+    ]
+  },
+  "tab-list.item#palmeiras": {
+    "props": {
+      "tabId": "palmeiras",
+      "label": "palmeiras",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#corinthians": {
+    "props": {
+      "tabId": "corinthians",
+      "label": "corinthians"
+    }
+  },
+  "tab-content#home": {
+    "props": {
+      "blockClass": "containerTabs"
+    },
+    "children": [
+      "tab-content.item#palmeiras",
+      "tab-content.item#corinthians"
+    ]
+  },
+  "tab-content.item#palmeiras": {
+    "children": [
+      "search-result-layout.customQuery#palmeiras"
+    ],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+  "tab-content.item#corinthians": {
+    "children": [
+      "search-result-layout.customQuery#corinthians"
+    ],
+    "props": {
+      "tabId": "corinthians"
+    }
+  },
+  "flex-layout.row#container": {
+    "props": {
+      "blockClass": "container"
+    },
+    "children": [
+      "list-context.image-list#banner-principal"
+    ]
+  },
+  "list-context.image-list#banner-principal": {
+    "children": [
+      "slider-layout#slide-principal"
+    ],
+    "props": {
+      "preload": true,
+      "height": 650,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#slide-principal": {
+    "props": {
+      "blockClass": "slide-principal",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false
+    }
+  },
+  "search-result-layout.customQuery#palmeiras": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "palmeiras",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#custom"
+    ]
+  },
+  "search-result-layout.customQuery#corinthians": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "corinthians",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#custom"
+    ]
+  }
+}

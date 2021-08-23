@@ -1,0 +1,59 @@
+.searchBarContainer {
+    width: 580px;
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) {
+    border: 0px solid;
+    border-bottom: 2px solid;
+    border-radius: 0;
+    border-color: #fff;
+}
+
+.searchBarInnerContainer :global(.vtex-styleguide-9-x-input), .searchBarInnerContainer :global(.vtex-input__suffix) {
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+.searchBarInnerContainer--opened :global(.vtex-styleguide-9-x-input), .searchIcon--search-bar, .currencyContainer, :global(.vtex-address-form-4-x-input) {
+    color: #fff;
+}
+
+.searchBarInnerContainer--opened :global(.vtex-input-prefix__group) {
+    border-color: #59ff00;
+}
+
+.portalWrapper--search-bar :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
+    max-width: 580px;
+}
+
+.portalWrapper--search-bar :global(.vtex-search-2-x-biggy-autocomplete) {
+    background: #303030;
+}
+
+.portalWrapper--search-bar :global(.vtex-search-2-x-itemListTitle), .portalWrapper--search-bar :global(.vtex-search-2-x-itemListLinkTitle) {
+    color: #fff;
+    transition: ease-in-out .2s;
+}
+
+.portalWrapper--search-bar :global(.vtex-search-2-x-itemListLink):hover {
+    background: #303030;
+}
+
+.portalWrapper--search-bar :global(.vtex-search-2-x-itemListLink):hover :global(.vtex-search-2-x-itemListLinkTitle), .productBrand {
+    color: #59ff00;
+}
+
+.installmentsPrice, .quantitySelectorTitle {
+    color: #f5f5f5;
+}
+
+.productDescriptionTitle {
+    color: #59ff00;
+    font-size: 25px;
+}
+
+.content {
+    color: #fff;
+    font-size: 18px;
+}

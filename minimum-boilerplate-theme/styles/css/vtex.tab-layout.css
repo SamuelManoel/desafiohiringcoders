@@ -1,0 +1,32 @@
+.listContainer {
+    background: #212121;
+}
+
+.listItem :global(.vtex-button):hover {
+    background-color: initial;
+}
+
+.listItemActive :global(.vtex-button) {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #59ff00;
+    background-color: initial;
+}
+
+.listItemActive :global(.vtex-button__label) {
+    color: #59ff00 !important;
+}
+
+.listItem :global(.vtex-button__label) {
+    color: #fff;
+    transition: linear .2s;
+}
+
+.contentContainer {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.container--home {
+    padding-bottom: 100px;
+}

@@ -1,0 +1,107 @@
+{
+  // define os blocos
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  // diz que os blocos são do tipo full
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  // diz que dentro do header vai um componente do tipo sticky layout
+  "header-layout.desktop": {
+    "children": ["sticky-layout#desktop"]
+  },
+  // define a classe e o o componente que via renderizar dentro dele
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+  },
+
+  // define quais componentes estão dentro desse flex row
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "flex-layout.col#spacer",
+      // "login",
+      "minicart.v2"
+    ]
+  },
+  // coloca o autocomplete da busca
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "blockClass":"search-bar",
+      "openAutocompleteOnFocus": true
+    }
+  },
+
+  // define um spacer ( grow em flexbox joga os elementos para suas extremidades )
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  // essa coluna define que dentro dela vai o componente logo desktop
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  // define o logo da aplicação
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "150"
+    }
+  },
+
+  // define que dentro do header layout mobile vai um componente do tipo sticky
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  // define que dentro do componente stick vai um flex layout row
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+
+  // essa coluna define que dentro dela vai o componente logo desktop
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  // define os filhos do flex layout row mobile
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "flex-layout.col#logo-mobile",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": []
+  }
+}

@@ -1,0 +1,23 @@
+.flexRowContent--main-header-mobile{
+    background: #212121!important;
+}
+
+.flexRowContent--container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flexCol--flex-read-more {
+    padding: 0 10px;
+}
+
+.flexRowContent--containerProduct {
+    padding: 35px;
+}
+
+.flexRowContent--btn-buy-button  :global(.vtex-button) {
+    background: #59ff00;
+    border-color: #59ff00;
+    color: #424242;
+    font-weight: bold;
+}

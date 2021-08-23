@@ -1,0 +1,12 @@
+{
+    "store.custom#formulario": {
+        "blocks": [
+            "flex-layout.row#about-us"
+        ]
+    },
+    "flex-layout.row#about-us": {
+        "children": [
+            "lead"
+        ]
+    }
+}

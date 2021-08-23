@@ -1,0 +1,102 @@
+{
+  "store.search": {
+    "blocks": [
+      "search-result-layout"
+    ]
+  },
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop#custom",
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "breadcrumb.search",
+      "search-title.v2",
+      "flex-layout.row#top",
+      "search-fetch-previous",
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "showMore"
+    }
+  },
+  "search-result-layout.desktop#custom": {
+    "children": [
+      "search-fetch-previous",
+      "flex-layout.row#results-custom",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "showMore",
+      "defaultGalleryLayout": "home"
+    }
+  },
+  "flex-layout.row#top": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#results": {
+    "children": [
+      "flex-layout.col#filter",
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.row#results-custom": {
+    "children": [
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#filter": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#search": {
+    "children": [
+      "search-content"
+    ]
+  },
+  "product-summary.shelf#demo1": {
+    "props": {
+      "blockClass": "shelf-product"
+    },
+    "children": [
+      "product-summary-name",
+      "product-rating-summary",
+      "product-summary-image",
+      "product-rating-inline",
+      "flex-layout.row#price",
+      "flex-layout.row#readMore"
+    ]
+  },
+  "product-summary-image": {
+    "props": {
+      "hoverImage": {
+        "criteria": "index",
+        "index": 1
+      },
+      "showBadge": true
+    }
+  },
+  "gallery#teste": {
+    "blocks": [
+      "product-summary.shelf#demo1"
+    ]
+  },
+  "search-content": {
+    "blocks": [
+      "gallery#teste",
+      "not-found"
+    ]
+  }
+}
